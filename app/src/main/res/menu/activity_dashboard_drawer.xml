@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:textAlignment="center"
+            android:title="@string/menu_dashboard"
+            android:fontFamily="@font/rubik_bold" />
+        <item
+            android:id="@+id/nav_profile"
+            android:textAlignment="center"
+            android:title="@string/menu_profile"
+            android:fontFamily="@font/rubik_bold" />
+        <item
+            android:id="@+id/nav_schedule"
+            android:textAlignment="center"
+            android:title="@string/menu_schedule"
+            android:fontFamily="@font/rubik_bold" />
+        <item
+            android:id="@+id/nav_available_bus"
+            android:textAlignment="center"
+            android:title="@string/menu_available_bus"
+            android:fontFamily="@font/rubik_bold" />
+        <item
+            android:id="@+id/nav_reservation"
+            android:textAlignment="center"
+            android:title="@string/menu_reservation"
+            android:fontFamily="@font/rubik_bold" />
+        <item
+            android:id="@+id/nav_logout"
+            android:textAlignment="center"
+            android:title="@string/menu_logout"
+            android:fontFamily="@font/rubik_bold" />
+    </group>
+</menu>

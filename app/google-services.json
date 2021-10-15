@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "666539622043",
+    "project_id": "busschedulingapp",
+    "storage_bucket": "busschedulingapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666539622043:android:ada61b048427c08c94d03e",
+        "android_client_info": {
+          "package_name": "com.example.busschedulingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "666539622043-ka6fn11pdpk4jc9h75ini7569qf3sbv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeMmJt2wxMNzcfCnYifpOX7f6_VlO0-gk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "666539622043-ka6fn11pdpk4jc9h75ini7569qf3sbv6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/cancelbtn"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="#EF5F5F"
+        android:text="Cancel"
+        android:textColor="#FAF8F8"
+        android:textColorHighlight="#EDE6E6"
+        android:textColorLink="#FDFDFD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addplatenumber" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="292.43dp"
+        android:layout_height="106dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/busfilter" />
+
+    <TextView
+        android:id="@+id/selectimage"
+        android:layout_width="230dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Select Image"
+        android:textAlignment="viewStart"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <EditText
+        android:id="@+id/addavailalbeseats"
+        android:layout_width="230dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:fontFamily="@font/montserratmedium"
+        android:hint="Available Seats"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addbusname" />
+
+    <EditText
+        android:id="@+id/adddestination"
+        android:layout_width="230dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:fontFamily="@font/montserratmedium"
+        android:hint="Destination"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addavailalbeseats" />
+
+    <EditText
+        android:id="@+id/addarrivaltime"
+        android:layout_width="230dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:fontFamily="@font/montserratmedium"
+        android:hint="Arrival Time"
+        android:inputType="time"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adddestination" />
+
+    <EditText
+        android:id="@+id/addbusname"
+        android:layout_width="230dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:focusable="auto"
+        android:fontFamily="@font/montserratmedium"
+        android:hint="Bus Name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectimage" />
+
+    <EditText
+        android:id="@+id/adddeparturetime"
+        android:layout_width="230dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:fontFamily="@font/montserratmedium"
+        android:hint="Departure Time"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addarrivaltime" />
+
+    <EditText
+        android:id="@+id/adddrivername"
+        android:layout_width="230dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:fontFamily="@font/montserratmedium"
+        android:hint="Driver Name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adddeparturetime" />
+
+    <EditText
+        android:id="@+id/addfare"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/montserratmedium"
+        android:hint="Fare"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adddrivername" />
+
+    <EditText
+        android:id="@+id/addplatenumber"
+        android:layout_width="230dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:hint="Plate Number"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addfare" />
+
+    <Button
+        android:id="@+id/savebtn"
+        android:layout_width="110dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="#4FDFD2"
+        android:text="Save"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/cancelbtn"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addplatenumber" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

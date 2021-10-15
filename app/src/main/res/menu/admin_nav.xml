@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_adminschedule"
+            android:textAlignment="center"
+            android:title="Manage Schedule" />
+        <item
+            android:id="@+id/nav_adminavailablebus"
+            android:textAlignment="center"
+            android:title="Manage Available Bus" />
+        <item
+            android:id="@+id/nav_adminbusinfo"
+            android:textAlignment="center"
+            android:title="Manage Bus Information" />
+        <item
+            android:id="@+id/nav_adminreservation"
+            android:textAlignment="center"
+            android:title="Manage Reservation" />
+        <item
+            android:id="@+id/nav_adminprintreport"
+            android:textAlignment="center"
+            android:title="Print Report" />
+        <item
+            android:id="@+id/nav_adminlogout"
+            android:textAlignment="center"
+            android:title="Logout" />
+    </group>
+
+
+</menu>
