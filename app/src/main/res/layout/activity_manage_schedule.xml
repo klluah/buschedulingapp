@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@id/drawer_layout"
-    tools:context=".ManageSchedule">
+    tools:context="com.busschedulingap.busschedulingapp.admin.ManageSchedule">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,15 +14,111 @@
 
         <include layout="@layout/admin_toolbar" />
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Schedule"
-            android:textSize="50sp"
-            android:textStyle="bold"
-            android:gravity="center" />
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/addschedbtn"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#98CEFC"
+                android:text="Add Schedule"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+         <TableLayout
+            android:layout_width="302dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="4"
+                    android:background="#22A48E"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:padding="10sp"
+                    android:text="@string/title1"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="7"
+                    android:background="#4C72B1"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:padding="10sp"
+                    android:text="@string/title2"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="4"
+                    android:background="#DF4F4F"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:padding="10sp"
+                    android:text="@string/title3"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="4"
+                    android:background="#EFA94D"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:padding="10sp"
+                    android:text="@string/title4"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp">
+
+                </TextView>
+            </TableRow>
+
+        </TableLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/sched_swip"
+            android:layout_width="match_parent"
+            android:layout_height="540dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sched_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
 
     </LinearLayout>
+
 
     <RelativeLayout
         android:layout_width="300dp"

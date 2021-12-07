@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/drawable/add_icon.xml" value="0.2515625" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.19907407407407407" />
         <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/drawable/textview_border.xml" value="0.22" />
         <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/drawable/textview_border1.xml" value="0.3098958333333333" />
         <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/font/montserrat.xml" value="0.23055555555555557" />
@@ -13,22 +15,40 @@
         <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_facebook.xml" value="0.17572463768115942" />
         <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_google.xml" value="0.17572463768115942" />
         <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_manage_bus_information.xml" value="0.25" />
-        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_manage_buses.xml" value="0.33" />
-        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_manage_reservaiton.xml" value="0.16893115942028986" />
-        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_manage_schedule.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_print_report.xml" value="0.2203125" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_manage_bus_information.xml" value="0.22" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_manage_buses.xml" value="0.25" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_manage_reservaiton.xml" value="0.2" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_manage_reservation_individual.xml" value="0.2609673790776153" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_manage_schedule.xml" value="0.33" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_payment.xml" value="0.15534420289855072" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_print_report.xml" value="0.33" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_reservation_busname.xml" value="0.22" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_reserve_aseat.xml" value="0.1" />
         <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_scrolling.xml" value="0.15625" />
-        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_sign_in.xml" value="0.25" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_sign_in.xml" value="0.22" />
         <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
         <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_twitter.xml" value="0.17572463768115942" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_user_available_bus.xml" value="0.33" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_user_bus_information.xml" value="0.22" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_user_dashboard.xml" value="0.33" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_user_payment.xml" value="0.22" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_user_profile.xml" value="0.2" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_user_reservation.xml" value="0.18" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_user_reservation_confirmation.xml" value="0.16" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_user_reserve_seat.xml" value="0.33" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/activity_user_schedule.xml" value="0.25" />
         <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/addbuspopup.xml" value="0.33" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/addschedulepopup.xml" value="0.25" />
         <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/admin_nav_drawer.xml" value="0.25" />
         <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/admin_toolbar.xml" value="0.33" />
         <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/app_bar_dashboard.xml" value="0.25" />
         <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/availablebusitem.xml" value="0.33" />
-        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/content_dashboard.xml" value="0.5" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/availablebusitem_user.xml" value="0.5" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/back_toolbar.xml" value="0.19429347826086957" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/content_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/content_reserve_aseat.xml" value="0.19429347826086957" />
         <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/content_scrolling.xml" value="0.17572463768115942" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/edit_userinfo.xml" value="0.25" />
         <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/fragment_available_bus.xml" value="0.33" />
         <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/fragment_dashboard.xml" value="0.22" />
         <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/fragment_gallery.xml" value="0.20516304347826086" />
@@ -39,6 +59,19 @@
         <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/fragment_schedule.xml" value="0.25" />
         <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/fragment_slideshow.xml" value="0.20516304347826086" />
         <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/nav_header_dashboard.xml" value="0.33" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/reservation_busitem.xml" value="1.25" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/reservation_individualbusitem.xml" value="0.5" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/reservation_individualbusitem_successful.xml" value="0.25" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/reservationitem.xml" value="0.33" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/reservationitem1.xml" value="0.22" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/scheditem.xml" value="0.17481884057971014" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/scheduleitem.xml" value="0.33" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/scheduleitem_user.xml" value="0.75" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/user_dashboard.xml" value="0.21739130434782608" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/user_nav_drawer.xml" value="0.33" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/user_reservation_successful.xml" value="0.1408308004052685" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/user_toolbar.xml" value="0.1" />
+        <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/layout/userinfopopup.xml" value="0.33" />
         <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/menu/activity_dashboard_drawer.xml" value="0.5" />
         <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/menu/admin.xml" value="0.25" />
         <entry key="..\:/Users/63946/AndroidStudioProjects/BusSchedulingApp/app/src/main/res/menu/admin_nav.xml" value="0.21875" />

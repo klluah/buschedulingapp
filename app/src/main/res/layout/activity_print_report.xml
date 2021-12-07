@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@id/drawer_layout"
-    tools:context=".PrintReport">
+    tools:context="com.busschedulingap.busschedulingapp.admin.PrintReport">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,14 +14,417 @@
 
         <include layout="@layout/admin_toolbar" />
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Print Report"
-            android:textSize="50sp"
-            android:textStyle="bold"
-            android:gravity="center" />
+            android:layout_height="485dp"
+            android:layout_margin="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="#98CEFC"
+            android:orientation="vertical">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/rubik_medium"
+                android:text="DAILY REPORT"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/current_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserratmedium"
+                android:text="Nov 12, 2021"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="40dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="4"
+                        android:background="#FF3E4043"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:foregroundGravity="center_vertical"
+                        android:gravity="center|center_vertical"
+                        android:padding="10sp"
+                        android:text="Bus"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="10dp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="4"
+                        android:background="#3E4043"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:padding="10sp"
+                        android:text="Number            of Bus "
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="10dp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="4"
+                        android:background="#FF3E4043"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:padding="10sp"
+                        android:text="Number of Reservation"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="10dp"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="4"
+                        android:background="#ffffff"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:foregroundGravity="center_vertical"
+                        android:gravity="center|center_vertical"
+                        android:padding="10sp"
+                        android:text="ALPS"
+                        android:textAlignment="center"
+                        android:textColor="#494646"
+                        android:textSize="10dp"/>
+
+                    <TextView
+                        android:id="@+id/bus_alps"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="4"
+                        android:background="#ffffff"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:padding="10sp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="#494646"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/res_alps"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="4"
+                        android:background="#ffffff"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:padding="10sp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="#494646"
+                        android:textSize="12sp"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="4"
+                        android:background="#ffffff"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:foregroundGravity="center_vertical"
+                        android:gravity="center|center_vertical"
+                        android:padding="10sp"
+                        android:text="JAPS"
+                        android:textAlignment="center"
+                        android:textColor="#494646"
+                        android:textSize="10dp"/>
+
+                    <TextView
+                        android:id="@+id/bus_japs"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="4"
+                        android:background="#ffffff"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:padding="10sp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="#494646"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/res_japs"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="4"
+                        android:background="#ffffff"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:padding="10sp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="#494646"
+                        android:textSize="12sp"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="4"
+                        android:background="#ffffff"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:foregroundGravity="center_vertical"
+                        android:gravity="center|center_vertical"
+                        android:padding="10sp"
+                        android:text="JAM"
+                        android:textAlignment="center"
+                        android:textColor="#494646"
+                        android:textSize="10dp"/>
+
+                    <TextView
+                        android:id="@+id/bus_jam"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="4"
+                        android:background="#ffffff"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:padding="10sp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="#494646"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/res_jam"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="4"
+                        android:background="#ffffff"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:padding="10sp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="#494646"
+                        android:textSize="12sp"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="4"
+                        android:background="#ffffff"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:foregroundGravity="center_vertical"
+                        android:gravity="center|center_vertical"
+                        android:padding="10sp"
+                        android:text="DLTBCO"
+                        android:textAlignment="center"
+                        android:textColor="#494646"
+                        android:textSize="10dp"/>
+
+                    <TextView
+                        android:id="@+id/bus_dltbco"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="4"
+                        android:background="#ffffff"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:padding="10sp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="#494646"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/res_dltbco"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="4"
+                        android:background="#ffffff"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:padding="10sp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="#494646"
+                        android:textSize="12sp"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="4"
+                        android:background="#ffffff"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:foregroundGravity="center_vertical"
+                        android:gravity="center|center_vertical"
+                        android:padding="10sp"
+                        android:text="DELAROSA"
+                        android:textAlignment="center"
+                        android:textColor="#494646"
+                        android:textSize="10dp"/>
+
+                    <TextView
+                        android:id="@+id/bus_delarosa"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="4"
+                        android:background="#ffffff"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:padding="10sp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="#494646"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/res_delarosa"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="4"
+                        android:background="#ffffff"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:padding="10sp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="#494646"
+                        android:textSize="12sp"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="4"
+                        android:background="#ffffff"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:foregroundGravity="center_vertical"
+                        android:gravity="center|center_vertical"
+                        android:padding="10sp"
+                        android:text="SUPREME"
+                        android:textAlignment="center"
+                        android:textColor="#494646"
+                        android:textSize="10dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/bus_supreme"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="4"
+                        android:background="#ffffff"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:padding="10sp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="#494646"
+                        android:textSize="12sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/res_supreme"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="4"
+                        android:background="#ffffff"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:padding="10sp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="#494646"
+                        android:textSize="12sp"></TextView>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="4"
+                        android:background="#CDCCCC"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:foregroundGravity="center_vertical"
+                        android:gravity="center|center_vertical"
+                        android:padding="10sp"
+                        android:text="TOTAL"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="10dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/bus_total"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="4"
+                        android:background="#CDCCCC"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:padding="10sp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/res_total"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="4"
+                        android:background="#CDCCCC"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:padding="10sp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp"></TextView>
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="© BusSchedulingApp, 2021"
+                android:textAlignment="center"
+                android:textColor="#CCFFFFFF"
+                android:textSize="10sp" />
+        </LinearLayout>
     </LinearLayout>
 
     <RelativeLayout

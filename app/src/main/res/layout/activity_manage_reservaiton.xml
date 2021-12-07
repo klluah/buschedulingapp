@@ -5,23 +5,985 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@id/drawer_layout"
-    tools:context=".ManageReservation">
+    tools:context="com.busschedulingap.busschedulingapp.admin.ManageReservation">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
         <include layout="@layout/admin_toolbar" />
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Manage Reservation"
-            android:textSize="50sp"
-            android:textStyle="bold"
-            android:gravity="center" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:padding="10sp"
+            android:text="Choose A Bus"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="14sp" />
 
+        <Button
+            android:id="@+id/alps_btn"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="#98CEFC"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Alps"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/japs_btn"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="#98CEFC"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Japs"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/jam_btn"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="#98CEFC"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Jam"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/dltbco_btn"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="#98CEFC"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Dltbco"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/delarosa_btn"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="#98CEFC"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Delarosa"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/supreme_btn"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="#98CEFC"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Supreme"
+            android:textColor="#ffffff" />
+
+
+        <!--<TextView
+            android:id="@+id/rescurrentdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:padding="10sp"
+            android:text="Nov, 11 2021"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            &lt;!&ndash;<ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:foregroundGravity="center">&ndash;&gt;
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/rubik_bold_italic"
+                    android:padding="10sp"
+                    android:text="ALPS"
+                    android:textAlignment="center"
+                    android:textColor="#98CEFC"
+                    android:textSize="14sp" />
+                <ScrollView
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="2dp"
+                    android:scrollbars="vertical">
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TableLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="53dp">
+
+                                    <TextView
+                                        android:layout_width="81dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Reservation"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="93dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Plate Number"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="80dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Destination"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="101dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Departure Time"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="82dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Arrival Time"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="62dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="  Driver  "
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="43dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Fare"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                                android:id="@+id/resbus_swip"
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/alps_rv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                </androidx.recyclerview.widget.RecyclerView>
+                            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </ScrollView>
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/rubik_bold_italic"
+                android:padding="10sp"
+                android:text="JAPS"
+                android:textAlignment="center"
+                android:textColor="#98CEFC"
+                android:textSize="14sp" />
+                <ScrollView
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="2dp"
+                    android:scrollbars="vertical">
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TableLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="53dp">
+
+                                    <TextView
+                                        android:layout_width="81dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Reservation"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="93dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Plate Number"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="80dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Destination"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="101dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Departure Time"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="82dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Arrival Time"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="62dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="  Driver  "
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="43dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Fare"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                                android:id="@+id/japs_swip"
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/japs_rv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                </androidx.recyclerview.widget.RecyclerView>
+                            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </ScrollView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/rubik_bold_italic"
+                    android:padding="10sp"
+                    android:text="JAM"
+                    android:textAlignment="center"
+                    android:textColor="#98CEFC"
+                    android:textSize="14sp" />
+                <ScrollView
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="2dp"
+                    android:scrollbars="vertical">
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TableLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="53dp">
+
+                                    <TextView
+                                        android:layout_width="81dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Reservation"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="93dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Plate Number"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="80dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Destination"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="101dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Departure Time"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="82dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Arrival Time"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="62dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="  Driver  "
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="43dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Fare"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                                android:id="@+id/jam_swip"
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/jam_rv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                </androidx.recyclerview.widget.RecyclerView>
+                            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </ScrollView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/rubik_bold_italic"
+                    android:padding="10sp"
+                    android:text="DLTBCO"
+                    android:textAlignment="center"
+                    android:textColor="#98CEFC"
+                    android:textSize="14sp" />
+                <ScrollView
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="2dp"
+                    android:scrollbars="vertical">
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TableLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="53dp">
+
+                                    <TextView
+                                        android:layout_width="81dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Reservation"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="93dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Plate Number"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="80dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Destination"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="101dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Departure Time"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="82dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Arrival Time"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="62dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="  Driver  "
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="43dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Fare"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                                android:id="@+id/dltbco_swip"
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/dltbco_rv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                </androidx.recyclerview.widget.RecyclerView>
+                            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </ScrollView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/rubik_bold_italic"
+                    android:padding="10sp"
+                    android:text="DELAROSA"
+                    android:textAlignment="center"
+                    android:textColor="#98CEFC"
+                    android:textSize="14sp" />
+                <ScrollView
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="2dp"
+                    android:scrollbars="vertical">
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TableLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="53dp">
+
+                                    <TextView
+                                        android:layout_width="81dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Reservation"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="93dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Plate Number"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="80dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Destination"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="101dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Departure Time"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="82dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Arrival Time"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="62dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="  Driver  "
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="43dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Fare"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                                android:id="@+id/delarosa_swip"
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/delarosa_rv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                </androidx.recyclerview.widget.RecyclerView>
+                            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </ScrollView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/rubik_bold_italic"
+                    android:padding="10sp"
+                    android:text="SUPREME"
+                    android:textAlignment="center"
+                    android:textColor="#98CEFC"
+                    android:textSize="14sp" />
+                <ScrollView
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="2dp"
+                    android:scrollbars="vertical">
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TableLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="53dp">
+
+                                    <TextView
+                                        android:layout_width="81dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Reservation"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="93dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Plate Number"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="80dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Destination"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="101dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Departure Time"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="82dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Arrival Time"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="62dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="  Driver  "
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="43dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="4"
+                                        android:background="#98CEFC"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:padding="10sp"
+                                        android:text="Fare"
+                                        android:textAlignment="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                                android:id="@+id/supreme_swip"
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/supreme_rv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                </androidx.recyclerview.widget.RecyclerView>
+                            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </ScrollView>
+            </LinearLayout>
+        </ScrollView>-->
     </LinearLayout>
 
     <RelativeLayout

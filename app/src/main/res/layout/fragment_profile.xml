@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.profile.ProfileFragment">
+    tools:context="com.busschedulingap.busschedulingapp.ui.profile.ProfileFragment">
 
     <TextView
         android:id="@+id/email"
@@ -46,7 +46,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.758"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/birthdate" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_birthdate" />
 
     <TextView
         android:id="@+id/textView16"
@@ -84,7 +84,7 @@
         app:layout_constraintTop_toBottomOf="@+id/profile_image" />
 
     <TextView
-        android:id="@+id/birthdate"
+        android:id="@+id/profile_birthdate"
         android:layout_width="200dp"
         android:layout_height="30dp"
         android:layout_marginTop="45dp"
@@ -166,7 +166,7 @@
         android:layout_marginTop="41dp"
         android:layout_marginEnd="30dp"
         android:src="@drawable/birthdate"
-        app:layout_constraintEnd_toStartOf="@+id/birthdate"
+        app:layout_constraintEnd_toStartOf="@+id/profile_birthdate"
         app:layout_constraintHorizontal_bias="0.864"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
@@ -203,7 +203,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
         android:layout_marginTop="36dp"
-        android:src="@drawable/password"
+        android:src="@drawable/ic_baseline_https_24"
         app:layout_constraintEnd_toStartOf="@+id/textView21"
         app:layout_constraintHorizontal_bias="0.556"
         app:layout_constraintStart_toStartOf="parent"

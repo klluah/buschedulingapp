@@ -21,7 +21,7 @@
         <item
             android:id="@+id/nav_adminprintreport"
             android:textAlignment="center"
-            android:title="Print Report" />
+            android:title="Report" />
         <item
             android:id="@+id/nav_adminlogout"
             android:textAlignment="center"

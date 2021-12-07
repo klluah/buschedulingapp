@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@id/user_drawer_layout"
+    tools:context="com.busschedulingap.busschedulingapp.user.User_Dashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/user_toolbar" />
+
+        <Button
+            android:id="@+id/dashboardtoschedule"
+            android:layout_width="300dp"
+            android:layout_height="92dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:backgroundTint="#C9E6FF"
+            android:text="Schedule"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dashboardtoreservation"
+                android:layout_width="140dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="58dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#C9E6FF"
+                android:text="Reservation"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/dashboardtoavailablebus"
+                android:layout_width="140dp"
+                android:layout_height="72dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#C9E6FF"
+                android:text="Available Bus"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="414dp"
+                android:layout_height="321dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/map" />
+
+            <ImageButton
+                android:id="@+id/imageButtonFacebook"
+                android:layout_width="30dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="204dp"
+                android:backgroundTint="#FFFFFF"
+                android:src="@drawable/facebook" />
+
+            <ImageButton
+                android:id="@+id/imageButtonGoogle"
+                android:layout_width="30dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="204dp"
+                android:backgroundTint="#FFFFFF"
+                android:src="@drawable/google" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white">
+
+        <include layout="@layout/user_nav_drawer" />
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

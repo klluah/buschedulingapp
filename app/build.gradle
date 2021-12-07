@@ -8,12 +8,11 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.example.busschedulingapp"
+        applicationId "com.busschedulingap.busschedulingapp"
         minSdk 21
         targetSdk 31
-        versionCode 1
-        versionName "1.0"
-
+        versionCode 3
+        versionName "1.3"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -64,9 +63,16 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'androidx.cardview:cardview:1.0.0'
 
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.firebase:firebase-storage:20.0.0'
+
+    implementation 'com.google.android.material:material:1.1.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-
 }

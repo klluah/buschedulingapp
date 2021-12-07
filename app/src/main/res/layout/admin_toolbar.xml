@@ -15,11 +15,11 @@
         android:src="@drawable/ic_baseline_menu_24" />
 
     <TextView
+        android:id="@+id/admin_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:backgroundTint="#98CEFC"
-        android:text="Admin"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="20sp"

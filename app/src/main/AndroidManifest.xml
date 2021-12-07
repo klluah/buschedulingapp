@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.busschedulingapp">
+    package="com.busschedulingap.busschedulingapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,45 +12,76 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BusSchedulingApp">
         <activity
-            android:name=".PrintReport"
+            android:name="com.busschedulingap.busschedulingapp.admin.Reservation_Busname"
             android:exported="true" />
         <activity
-            android:name=".ManageReservation"
+            android:name="com.busschedulingap.busschedulingapp.user.Payment"
             android:exported="true" />
         <activity
-            android:name=".ManageBusInformation"
+            android:name="com.busschedulingap.busschedulingapp.admin.ManageReservation_Individual"
             android:exported="true" />
         <activity
-            android:name=".ManageBuses"
+            android:name="com.busschedulingap.busschedulingapp.user.User_Bus_Information"
+            android:exported="true"
+            android:parentActivityName="com.busschedulingap.busschedulingapp.user.User_AvailableBus" />
+        <activity
+            android:name="com.busschedulingap.busschedulingapp.user.User_Reserve_Seat"
             android:exported="true" />
         <activity
-            android:name=".ManageSchedule"
+            android:name="com.busschedulingap.busschedulingapp.user.User_Reservation_Confirmation"
             android:exported="true" />
         <activity
-            android:name=".AdminAddAvailableBus"
+            android:name="com.busschedulingap.busschedulingapp.user.User_Profile"
             android:exported="true" />
         <activity
-            android:name=".GoogleActivity"
+            android:name="com.busschedulingap.busschedulingapp.user.User_Reservation"
             android:exported="true" />
         <activity
-            android:name=".FacebookActivity"
+            android:name="com.busschedulingap.busschedulingapp.user.User_AvailableBus"
             android:exported="true" />
         <activity
-            android:name=".TwitterActivity"
+            android:name="com.busschedulingap.busschedulingapp.user.User_Schedule"
             android:exported="true" />
         <activity
-            android:name=".DashboardActivity"
+            android:name="com.busschedulingap.busschedulingapp.user.User_Dashboard"
+            android:exported="true" />
+        <activity
+            android:name="com.busschedulingap.busschedulingapp.admin.PrintReport"
+            android:exported="true" />
+        <activity
+            android:name="com.busschedulingap.busschedulingapp.admin.ManageReservation"
+            android:exported="true" />
+        <activity
+            android:name="com.busschedulingap.busschedulingapp.admin.ManageBusInformation"
+            android:exported="true" />
+        <activity
+            android:name="com.busschedulingap.busschedulingapp.admin.ManageBuses"
+            android:exported="true" />
+        <activity
+            android:name="com.busschedulingap.busschedulingapp.admin.ManageSchedule"
+            android:exported="true" />
+        <activity
+            android:name="com.busschedulingap.busschedulingapp.GoogleActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.busschedulingap.busschedulingapp.FacebookActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.busschedulingap.busschedulingapp.TwitterActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.busschedulingap.busschedulingapp.DashboardActivity"
             android:exported="true"
             android:label="@string/title_activity_dashboard"
             android:theme="@style/Theme.BusSchedulingApp.NoActionBar" />
         <activity
-            android:name=".SignUp"
+            android:name="com.busschedulingap.busschedulingapp.SignUp"
             android:exported="true" />
         <activity
-            android:name=".SignIn"
+            android:name="com.busschedulingap.busschedulingapp.SignIn"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.busschedulingap.busschedulingapp.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

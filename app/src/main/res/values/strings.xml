@@ -8,6 +8,26 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+
+    <string name="title1">Bus</string>
+    <string name="title2">Destination</string>
+    <string name="title3">Time</string>
+    <string name="title4">Fare</string>
+
+    <string name="item1">Bus</string>
+    <string name="item2">Destination</string>
+    <string name="item3">Time</string>
+    <string name="item4">Fare</string>
+
+
+    <string-array name="bus_name">
+        <item>ALPS</item>
+        <item>JAPS</item>
+        <item>JAM</item>
+        <item>DELAROSA</item>
+        <item>DLTBCO</item>
+        <item>SUPREME</item>
+    </string-array>
     <string name="menu_dashboard">Dashboard</string>
     <string name="menu_profile">Profile</string>
     <string name="menu_schedule">Schedule</string>
@@ -113,5 +133,14 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="default_web_clientid" translatable="false">666539622043-ka6fn11pdpk4jc9h75ini7569qf3sbv6.apps.googleusercontent.com</string>
+    <string name="title_activity_reserve_aseat">ReserveASeat</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
 </resources>

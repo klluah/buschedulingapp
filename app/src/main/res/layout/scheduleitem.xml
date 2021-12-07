@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000">
+
+    <LinearLayout
+        android:layout_width="302dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="302dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TableRow android:background="#E8E8E8">
+
+                <TextView
+                    android:id="@+id/scheditem1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_horizontal"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="@string/item1"
+                    android:textAlignment="center"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textSize="9dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/scheditem2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_horizontal"
+                    android:layout_weight="6"
+                    android:background="#E8E8E8"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="Lucena Quezon"
+                    android:textAlignment="center"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textSize="9dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/scheditem3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_horizontal"
+                    android:layout_weight="4"
+                    android:background="#E8E8E8"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:padding="10sp"
+                    android:text="@string/item3"
+                    android:textAlignment="center"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textSize="9dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/scheditem4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="4"
+                    android:background="#E8E8E8"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:padding="10sp"
+                    android:text="₱ 153.00 - ordinary ₱ 182.00 - with aircon"
+                    android:textAlignment="center"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textSize="9sp">
+
+                </TextView>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/deletesched"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|end"
+        android:layout_marginRight="24dp"
+        android:background="#00000000"
+        app:srcCompat="@drawable/delete" />
+</androidx.cardview.widget.CardView>

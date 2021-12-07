@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:666539622043:android:ada61b048427c08c94d03e",
         "android_client_info": {
-          "package_name": "com.example.busschedulingapp"
+          "package_name": "com.busschedulingap.busschedulingapp"
         }
       },
       "oauth_client": [
